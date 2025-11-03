@@ -229,7 +229,7 @@ void Camera::play(double speed)
 
         // Remove old cars
         for (size_t i = 0; i < trackedCars.size();) {
-            if (trackedCars[i].framesSinceSeen > 30) {
+            if (trackedCars[i].framesSinceSeen > 15) {
                 trackedCars.erase(trackedCars.begin() + i);
             } else i++;
         }
